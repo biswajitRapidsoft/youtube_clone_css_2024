@@ -183,6 +183,7 @@ main {
 }
 .cross-btn i {
     font-size: 30px;
+    cursor: pointer;
 }
 
 /* section-2 */
