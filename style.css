@@ -1,5 +1,6 @@
 * {
     margin: 0;
+    font-family: sans-serif;
 }
 
 nav {
@@ -110,10 +111,8 @@ main {
 }
 
 .video-section {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
     padding: 10px 0;
     border-bottom: 5px solid rgb(0, 0, 0, 0.3);
 }
@@ -121,12 +120,11 @@ main {
 .video {
     padding: 0 5px;
     margin: 0 5px 10px 5px;
-    /* max-width: 28vw; */
 }
 
 .video img {
-    width: 15vw;
-    height: 20vh;
+    width: 100%;
+    height: auto;
     margin-bottom: 7px;
     cursor: pointer;
 }
@@ -157,7 +155,6 @@ main {
 .title p {
     font-size: 18px;
     cursor: pointer;
-    /* margin-bottom: 5px; */
 }
 
 .dot-details {
@@ -173,7 +170,7 @@ main {
     margin: 0 5px;
 }
 
-/* Spesial Section */
+/* Special Section */
 .cross-btn {
     display: flex;
     justify-content: space-between;
@@ -197,6 +194,51 @@ main {
 
 
 
+
+
+
+@media screen and (max-width: 768px) {
+    .logo {
+        margin-right: 20px;
+        margin-left: 10px;
+    }
+    
+    .logo img {
+        height: 28px;
+        width: auto;
+    }
+
+    .user, .add-video, .rubics-grid, .bell {
+        margin: 0px 7px;
+    }
+
+    .add-video img, .rubics-grid img, .bell img {
+        height: 28px;
+        width: auto;
+    }
+
+    input {
+        height: 35px;
+    }
+
+    form button img {
+        height: 25px;
+        margin: 5px;
+    }
+
+    form button {
+        height: 35px;
+        width: 30%;
+    }
+
+    .user img {
+        height: 36px;
+    }
+
+    .categories button {
+        font-size: 15px;
+    }
+}
 
 
 
@@ -237,21 +279,6 @@ main {
 
     .user img {
         height: 30px;
-    }
-
-
-    .video {
-        max-width: 90vw;
-    }
-
-    .video img {
-        width: 80vw;
-    }
-
-    .vid-details img {
-        height: 45px;
-        width: 45px;
-        border-radius: 50%;
     }
 
     .categories button {
